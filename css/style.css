@@ -155,7 +155,7 @@ p{
 .interractive{
     display: flex;
     flex-direction: column;
-    transform: translate(-150px, 0);
+    transform: translate(-70px, 0);
     transition: 0.3s ease;
     opacity: 0;
 }
