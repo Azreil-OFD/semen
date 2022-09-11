@@ -1,1 +1,0 @@
-# IsmailBayramov.github.io
