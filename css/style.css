@@ -1,37 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://allfont.ru/allfont.css?fonts=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 :root{
-    --textcolor: #524d5a;
+    --textcolor: #1d1d1d;
     --buttoncolor: #ffff;
-    --bordercolor: #e6e6e6;
-    --contentcolor: #ffffff;
+    --bordercolor: #efefef00;
+    --contentcolor: #ffffff00;
 }
 
 
 /*Общие теги*/
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 25px;
-}
-
-.page > .first > header{
-    /*margin-top: 3.5em*/
+    scroll-padding-top: 15px;
 }
 
 .page{
     display: flex;
     justify-content: center;
     max-width: 2250px;
-    margin: 0 auto;
+    margin: 1px 1px 1px 45px;
+    font-family: 'Noto Sans'; 
     color: var(--textcolor);
-    font-family:  'Noto Sans', sans-serif; 
     z-index: 1;
 }
 
 .section{
     text-align: center;
-    /*margin-top: 0.2em;*/
     font-size: 24px;
+}
+
+section.first.section {
+    font-size: 23px;
+    font-weight: 500;
 }
 
 ul{
@@ -54,7 +56,7 @@ button{
 /*Боковое меню*/
 header{
     margin-top: 1.5em;
-    margin-right: 1.5em;
+    margin-right: 3em;
     position: sticky;/*делает меню фиксированным к вверху*/
     top: 20px;/*регулирует расстояние во время прокрукти*/
 }
@@ -62,46 +64,60 @@ header{
 .logo{
     max-width: 100%;
     max-height: 100%;
-    width: 245px;
+    width: 260px;
     margin-bottom: 5px;
     object-fit: cover;/*нужно для лучшего отображение изображения(хоть и улучшает это чуть-чуть)*/
 }
 
 .footer-list{
-    border: 1.5px solid var(--bordercolor);      
-    border-radius: 20px;
     background-color: var(--contentcolor);
 }
 
-.footer-item{
-    padding-top: 1em;
-    padding-bottom: 0.5em;
+.footer-name{
+    font-size: 24px;
+    margin-top: 30px;
 }
 
-.footer-name{
-    padding-top: 15px;
+.footer-item{
+    padding-top: 2.2em;
+    font-style: italic;
+}
+
+li.footer-item.last {
+    padding-bottom: 1.5em;
 }
 
 /*Основное содержание*/
 .card{
     margin-top: 0.7em;
+    margin-bottom: 0.7em;
     text-align: center;
-    border: 1.5px solid var(--bordercolor); 
     border-radius: 20px;
-    background-color: var(--contentcolor);
+}
+
+.card.first{
+    background: #FAD74E url(noise-pattern.png) repeat;
+}
+
+.card.second{
+    background: #FF8989 url(noise-pattern.png) repeat;
+}
+
+.card.third{
+    background: #92D2FC url(noise-pattern.png) repeat;
 }
 
 .container-card{
     display: flex;
-    max-width: 35em;
+    max-width: 36em;
     align-items: center;
 }
 
 
 .title{
-    margin-top: 10px;
-    margin-bottom: 3px;
-    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    font-size: 1.15em;
     font-weight: normal;
 }
 
@@ -110,6 +126,44 @@ hr{
 	height: 1px;
 	border: none;
 	border-top: 1px solid var(--bordercolor);
+}
+
+.link-c:hover .line.set.first{
+    width: 70px;
+    display: flex;
+}
+
+.link-c:hover .line.set.second{
+    width: 85px;
+    display: flex;
+}
+
+.link-c:hover .line.set.third{
+    width: 115px;
+    display: flex;
+}
+
+hr.line.set{
+    width: 0px;
+    transition: 0.3s ease;
+    margin-bottom: 0;
+}
+
+hr.line {
+    height: 1.6px;
+    background-color: black;
+}
+
+hr.line.card{
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+hr.line.footer{
+    width: 130px;
+    margin-top: 0.8em;
+    margin-bottom: -0.8em;
 }
 
 .pic-c{
@@ -123,24 +177,23 @@ hr{
 
 p{
     text-align: left;
-    max-width: 21em;
+    max-width: 22em;
     padding-left: 3em;
     font-size: 0.80em;
+    font-style: italic;
     padding-right: 2em;
-
 }
 
 .link-c{
-    border: 1.5px solid var(--bordercolor); 
-    border-radius: 20px;
-    padding: 11px 5em;
-    margin-bottom: 1.5em;
+    padding: 14px 3.5em;
+    margin-bottom: 1em;
     background-color: var(--contentcolor);
 }
 
-.button{
-    margin-bottom: 0.5em;
-    background-color: inherit;
+.button { 
+    margin-bottom: 20px; 
+    margin-top: 5px; 
+    background-color: transparent; 
 }
 
 .info{
@@ -161,14 +214,69 @@ p{
 }
 
 .interractive-button{
-    margin: 5.5em 0em 0 1.5em;
+    background-color: #00ffff00;
+    margin: 5.2em 0em 0 1.5em;
     padding: 1em 1em 1em 1em;
     border-radius: 100%;
     max-height: 98px;
+    max-width: 98px;
 }
 
 .icon{
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 15px;
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0px 0px 0px -5px;
 }
+
+.icon-share{
+    max-width: 60px;
+    max-height: 60px;
+    margin: -4px 0 0 -8px;
+}
+
+body{
+    background: transparent url("noise-pattern.png") repeat;
+    position: relative;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .interractive{
+        flex-direction: initial;
+        transform: translate(0px, -150px);
+    }
+
+    .card {
+        margin-top: 0.7em;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .page{
+        margin: 1px 1px 1px -7px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    header{
+        margin-right: 0;
+        position: sticky;
+        top: 20px;
+    }
+
+    section.first.section {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: white url(noise-pattern.png) repeat;
+    }
+
+    .logo{
+        max-width: 100%;
+        max-height: 100%;
+        width: 260px;
+        margin: 0px 230px 0px 0px;
+        object-fit: cover;
+    }
+}
+/*#dd7a7a
