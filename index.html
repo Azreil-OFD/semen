@@ -4,105 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Ковчег</title>
+    
+    <title>14 школа</title>
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="SHORTCUT ICON" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body style="overflow-x:hidden;">
-    <section class="page">
-        <section class="first section">
-            <header>
-                <img class="logo" src="image/logo2.png" width="200" alt="pic">
-                <nav>
-                    <ul>
-                        <li class="link-c"><a href="#1" class="link">О НАС</a><hr class="line set first"></li>
-                        <li class="link-c"><a href="#2" class="link">СТАТЬИ</a><hr class="line set second"></li>
-                        <li class="link-c"><a href="#3" class="link">НОВОСТИ</a><hr class="line set third"></li>
-                    </ul>
-                </nav>
-    
-                <footer>
-                    <ul class="footer-list">
-                        <li class="footer-name">СВЯЗЬ С НАМИ</li>
-                        <hr class="line footer">
-                        <li class="footer-item"><a href="" class="link">ССЫЛКА</a></li>
-                        <li class="footer-item"><a href="" class="link">ССЫЛКА</a></li>
-                        <li class="footer-item last"><a href="" class="link">ССЫЛКА</a></li>
-                    </ul>
-                </footer>
-            </header>
-        </section>
-
-        <section class="second section">
-            <main>
-                <article class="block">
-                    <div id="1" class="info card first">
-                        <h1 class="title">О КОМПАНИИ</h1>
-                        <hr class="line card">
-                        <div class="container-card">
-                            <img src="image/1.png" width="400" height="400" alt="pic" class="pic-c">
-                            <div class="p">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <button class="button" type="button"><a href="#2" class="link">ДАЛЕЕ</a></button>
-                    </div>   
-
-                    <div class="info interractive">
-                        <button type="button" class="interractive-button"><img class="icon" src="image/like2.png"  alt="image"></button>
-                        <button type="button" class="interractive-button"><img class="icon" src="image/comment2.png" alt="image"></button>
-                        <button type="button" class="interractive-button"><img class="icon-share" src="image/share2.png" alt="image"></button>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header_body">
+                    <a href="#" class="header_logo">
+                        <img src="image/logo.png" alt="">
+                    </a>
+                    <div class="header_burger">
+                        <span></span>
                     </div>
-                </article>
+                    <nav class="header_menu">
+                        <ul class="header_list">
+                            <li>
+                                <a href="#1" class="header_link">СТАТЬЯ 1</a>
+                            </li>
+                            <li>
+                                <a href="#2" class="header_link">СТАТЬЯ 2</a>
+                            </li>
+                            <li>
+                                <a href="#3" class="header_link">СТАТЬЯ 3</a>
+                            </li>
+                            <li>
+                                <a href="#4" class="header_link">СТАТЬЯ 4</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header_link">СОЦ СЕТИ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <section class="first section">
+                <header>
+                    <img class="logo" src="image/logo.webp" width="200" alt="pic">
+                    <nav>
+                        <ul>
+                            <li class="link-c menu_list">
+                                <a href="#1" class="link first menu_link">СТАТЬЯ 1</a>
+                                <hr class="line set first">
+                            </li>
+                            <li class="link-c">
+                                <a href="#2" class="link second">СТАТЬЯ 2</a>
+                                <hr class="line set second">
+                            </li>
+                            <li class="link-c">
+                                <a href="#3" class="link third">СТАТЬЯ 3</a>
+                                <hr class="line set third">
+                            </li>
+                            <li class="link-c">
+                                <a href="#4" class="link fourth">СТАТЬЯ 4</a>
+                                <hr class="line set fourth">
+                            </li>
+                        </ul>
+                    </nav>
+                    <footer>
+                        <ul class="footer-list">
+                            <li class="footer-name">МЫ В СОЦ СЕТЯХ</li>
+                            <hr class="line footer">
+                            <li class="footer-item"><a href="https://vk.com/public211846048" class="link" target="_blank">ВКОНТАКТЕ</a></li>
+                            <li class="footer-item last"><a href="" class="link" target="_blank">ССЫЛКА</a></li>
+                        </ul>
+                    </footer>
+                </header>
+            </section>
+            <section class="second section">
+                <main>
+                    <article class="block">
+                        <div id="1" class="info card first">
+                            <h1 class="title">СТАТЬЯ 1</h1>
+                            <h2 class="title date">12.12.2022 17:06</h2>
+                            <hr class="line card">
+                            <div class="container-card">
+                                <img src="image/1.png" width="400" height="400" alt="pic" class="pic-c">
+                                <div class="p">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <button class="button" type="button"><a href="#2" class="link">ДАЛЕЕ</a></button>
+                        </div>   
     
-                <article class="block">
-                    <div id="2" class="info card second">
-                        <h1 class="title">СТАТЬЯ</h1>
-                        <hr class="line card">
-                        <div class="container-card">
-                            <img src="image/2.png" width="400" height="400" alt="pic" class="pic-c">
-                            <div class="p">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <button class="button" type="button"><a href="#3" class="link">ДАЛЕЕ</a></button>
-                    </div>   
-
-                    <div class="info interractive" id="interractive">
-                        <button type="button" class="interractive-button"><img class="icon" src="image/like2.png"  alt="image"></button>
-                        <button type="button" class="interractive-button"><img class="icon" src="image/comment2.png" alt="image"></button>
-                        <button type="button" class="interractive-button"><img class="icon-share" src="image/share2.png" alt="image"></button>
-                    </div>
-                </article>
-
-
-
-                <article class="block">
-                    <div id="3" class="info card third">
-                        <h1 class="title">НОВОСТИ</h1>
-                        <hr class="line card">
-                        <div class="container-card">
-                            <img src="image/3.png" width="400" height="400" alt="pic" class="pic-c">
-                            <div class="p">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <button class="button" type="button"><a href="#1" class="link">ДАЛЕЕ</a></button>
-                    </div>   
-
-                    <div class="info interractive">
+                        <div class="info interractive">
                             <button type="button" class="interractive-button"><img class="icon" src="image/like2.png"  alt="image"></button>
                             <button type="button" class="interractive-button"><img class="icon" src="image/comment2.png" alt="image"></button>
                             <button type="button" class="interractive-button"><img class="icon-share" src="image/share2.png" alt="image"></button>
-                    </div>
-                </article>
-
-            </main>
+                        </div>
+                    </article>
+                    <article class="block">
+                        <div id="2" class="info card second">
+                            <h1 class="title">СТАТЬЯ 2</h1>
+                            <h2 class="title date">12.12.2022 17:06</h2>
+                            <hr class="line card">
+                            <div class="container-card">
+                                <img src="image/2.png" width="400" height="400" alt="pic" class="pic-c">
+                                <div class="p">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <button class="button" type="button"><a href="#3" class="link">ДАЛЕЕ</a></button>
+                        </div>   
+                        <div class="info interractive" id="interractive">
+                            <button type="button" class="interractive-button"><img class="icon" src="image/like2.png"  alt="image"></button>
+                            <button type="button" class="interractive-button"><img class="icon" src="image/comment2.png" alt="image"></button>
+                            <button type="button" class="interractive-button"><img class="icon-share" src="image/share2.png" alt="image"></button>
+                        </div>
+                    </article>
+                    <article class="block">
+                        <div id="3" class="info card third">
+                            <h1 class="title">СТАТЬЯ 3</h1>
+                            <h2 class="title date">12.12.2022 17:06</h2>
+                            <hr class="line card">
+                            <div class="container-card">
+                                <img src="image/3.png" width="400" height="400" alt="pic" class="pic-c">
+                                <div class="p">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <button class="button" type="button"><a href="#4" class="link">ДАЛЕЕ</a></button>
+                        </div>   
+                        <div class="info interractive">
+                                <button type="button" class="interractive-button"><img class="icon" src="image/like2.png"  alt="image"></button>
+                                <button type="button" class="interractive-button"><img class="icon" src="image/comment2.png" alt="image"></button>
+                                <button type="button" class="interractive-button"><img class="icon-share" src="image/share2.png" alt="image"></button>
+                        </div>
+                    </article>
+                    <article class="block">
+                        <div id="4" class="info card fourth">
+                            <h1 class="title">СТАТЬЯ 4</h1>
+                            <h2 class="title date">12.12.2022 17:06</h2>
+                            <hr class="line card">
+                            <div class="container-card">
+                                <img src="image/3.png" width="400" height="400" alt="pic" class="pic-c">
+                                <div class="p">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <button class="button" type="button"><a href="#1" class="link">НАЗАД</a></button>
+                        </div>   
+                        <div class="info interractive">
+                                <button type="button" class="interractive-button"><img class="icon" src="image/like2.png"  alt="image"></button>
+                                <button type="button" class="interractive-button"><img class="icon" src="image/comment2.png" alt="image"></button>
+                                <button type="button" class="interractive-button"><img class="icon-share" src="image/share2.png" alt="image"></button>
+                        </div>
+                    </article>
+                </main>
+            </section>
         </section>
-    </section>
-
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
