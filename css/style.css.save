@@ -17,7 +17,8 @@ html{
 
 body{
     background: transparent url("noise-pattern.png") repeat;
-    position: relative
+    position: relative;
+    font-famaly: 
 }
 
 .section{
@@ -471,7 +472,7 @@ p{
     justify-content: center;
     max-width: 2250px;
     margin: 1px 1px 1px 45px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     color: var(--textcolor);
     z-index: 1;
 }
