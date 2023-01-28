@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    PopUpHide();
     $(".header_burger").click(function(event) {
         $(".header_burger,.header_menu").toggleClass("active");
         $("body").toggleClass("lock");
@@ -8,3 +9,11 @@ $(document).ready(function() {
         $("body").toggleClass("lock");
       });
 });
+
+function PopUpShow(){
+    $("#popup1").show();
+}
+
+function PopUpHide(){
+    $("#popup1").hide();
+}

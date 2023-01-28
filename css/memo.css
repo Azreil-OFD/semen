@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+
+.gaonutosal {
+    margin: 0% 20% 0% 20%;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background-color: #333333;
+}
+
+.title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+}
+
+.pesontedan {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #f3f1f1;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgba(255,255,255,0.33);
+}
+
+label{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none; 
+}
+
+.pesontedan:last-child{
+    border-bottom-width: 1px;
+}
+
+.pesontedan input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.pesontedan label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #333333;
+    line-height: 3;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #333131;
+    font-size: 2em;
+}
+
+.pesontedan-content {
+    max-height: 0;
+    margin: 0px 50px 0 10px;
+    overflow: hidden;
+    background: #333333;
+    transition: max-height .40s;
+    font-size: 1.3em;
+    color: #fffdfd;
+    text-shadow: 0 1px 0 #292727;
+}
+
+.pesontedan-content {
+    background: #333333;
+}
+
+.pesontedan-content p {
+    margin: 1em;
+    line-height: 35px;
+    margin-top: 0;
+}
+
+/* :checked */
+.pesontedan input:checked~.pesontedan-content {
+    max-height: 100vh;
+}
+
+.pesontedan input:checked~label{
+    color: #f9a02c;
+}
+
+/* Icon */
+.pesontedan label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .40s;
+    -o-transition: all .40s;
+    transition: all .40s;
+}
+
+.pesontedan input[type=checkbox]+label::after {
+    content: "^";
+}
+
+.pesontedan input[type=radio]+label::after {
+    content: "\25BC";
+}
+
+.pesontedan input[type=checkbox]:checked+label::after {
+    transform: rotate(180deg);
+}
+
+.pesontedan input[type=radio]:checked+label::after {
+    transform: rotateX(180deg);
+}
+
+@media (max-width: 1000px) {
+    .gaonutosal{
+        margin: 5% 0 5% 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .pesontedan-content p{
+        margin-top: 1em;
+    }
+
+    .pesontedan input[type=checkbox]+label::after {
+        content: "";
+    }
+    
+    .pesontedan input[type=radio]+label::after {
+        content: "\25BC";
+    }
+}
