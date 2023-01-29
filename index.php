@@ -90,28 +90,31 @@
             </section>
             <section class="second section">
                 <main>
-                    <article class="block">
-                        <div id="1" class="info card first">
-                            <h1 class="title">ПОИСКИ</h1>
-                            <h2 class="title date">12 ноя 2022 в 12:13</h2>
-                            <hr class="line card">
-                            <div class="container-card">
-                                <div class="grid">
-                                    <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-34/s/v1/ig2/rLHE0XDqgeBpR7XfR0K2Qn--t2Iwz94gxz9TW8SHEFoGmI0syKduOLRLnS6vx634MIzKu_6M1YYDtCswr4vQmK2G.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-34/s/v1/ig2/rLHE0XDqgeBpR7XfR0K2Qn--t2Iwz94gxz9TW8SHEFoGmI0syKduOLRLnS6vx634MIzKu_6M1YYDtCswr4vQmK2G.jpg?size=1600x1200&quality=95&type=album"></a>
-                                    <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-26/s/v1/ig2/fYJMr9jveNpOcOHj15cJf49mZgGemEuCHupS26lgY75xmmBwqnQC9uqib8Qm01hiz4IeHbWWsvsIWcCyELSxWVt7.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-26/s/v1/ig2/fYJMr9jveNpOcOHj15cJf49mZgGemEuCHupS26lgY75xmmBwqnQC9uqib8Qm01hiz4IeHbWWsvsIWcCyELSxWVt7.jpg?size=1600x1200&quality=95&type=album"></a>
-                                    <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-76/s/v1/ig2/IQPFdCbosMXtarDsJjHNazBYxB84_ofzaQQhK7GPDKcW4zMtTWRdCycHy39ZdA-4f_d8ifV7umcMIZE6bSfAUxGs.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-76/s/v1/ig2/IQPFdCbosMXtarDsJjHNazBYxB84_ofzaQQhK7GPDKcW4zMtTWRdCycHy39ZdA-4f_d8ifV7umcMIZE6bSfAUxGs.jpg?size=1600x1200&quality=95&type=album"></a>
-                                    <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-30/s/v1/ig2/0KACUkTGe3DavQuYmtPLQTnkc1BXLLfaOIDEwJtF1np5v8F5xXHLUGFYP6ShrBXTxyDXXjs4KaT2OnGtRHoxVSiO.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-30/s/v1/ig2/0KACUkTGe3DavQuYmtPLQTnkc1BXLLfaOIDEwJtF1np5v8F5xXHLUGFYP6ShrBXTxyDXXjs4KaT2OnGtRHoxVSiO.jpg?size=1600x1200&quality=95&type=album"></a>
-                                    <a data-fslightbox="gallery" href="https://sun9-west.userapi.com/sun9-14/s/v1/ig2/Se7lWFrCMldnJMOZ55SeUpBGEYWIdVwyZzX4ZN8THVpMAuj94nsv8D-XqxKri8po1J5plRiSlNsyCmWF7BKtn4OG.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-west.userapi.com/sun9-14/s/v1/ig2/Se7lWFrCMldnJMOZ55SeUpBGEYWIdVwyZzX4ZN8THVpMAuj94nsv8D-XqxKri8po1J5plRiSlNsyCmWF7BKtn4OG.jpg?size=1600x1200&quality=95&type=album"></a>
-                                    <a data-fslightbox="gallery" href="https://sun9-west.userapi.com/sun9-12/s/v1/ig2/ZOmOEiVu43_2V4gaWOQReLzedJTqP1IXA3Vxx-ep_zal84r8Yxvde-yIC_-3uszo3zp6lnY6AQHvwstz9atudDNG.jpg?size=1200x1600&quality=95&type=album"><img src="https://sun9-west.userapi.com/sun9-12/s/v1/ig2/ZOmOEiVu43_2V4gaWOQReLzedJTqP1IXA3Vxx-ep_zal84r8Yxvde-yIC_-3uszo3zp6lnY6AQHvwstz9atudDNG.jpg?size=1200x1600&quality=95&type=album"></a>
-                                </div>
-                                <div class="p">
-                                    <p>Провели поиск, было более 30 человек. Всех благодарю. #нефтеюганск #гумкорпус</p>
-                                </div>
+                    <?php 
+                    echo "<article class="block">
+                    <div id="1" class="info card first">
+                        <h1 class="title">ПОИСКИ</h1>
+                        <h2 class="title date">12 ноя 2022 в 12:13</h2>
+                        <hr class="line card">
+                        <div class="container-card">
+                            <div class="grid">
+                                <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-34/s/v1/ig2/rLHE0XDqgeBpR7XfR0K2Qn--t2Iwz94gxz9TW8SHEFoGmI0syKduOLRLnS6vx634MIzKu_6M1YYDtCswr4vQmK2G.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-34/s/v1/ig2/rLHE0XDqgeBpR7XfR0K2Qn--t2Iwz94gxz9TW8SHEFoGmI0syKduOLRLnS6vx634MIzKu_6M1YYDtCswr4vQmK2G.jpg?size=1600x1200&quality=95&type=album"></a>
+                                <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-26/s/v1/ig2/fYJMr9jveNpOcOHj15cJf49mZgGemEuCHupS26lgY75xmmBwqnQC9uqib8Qm01hiz4IeHbWWsvsIWcCyELSxWVt7.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-26/s/v1/ig2/fYJMr9jveNpOcOHj15cJf49mZgGemEuCHupS26lgY75xmmBwqnQC9uqib8Qm01hiz4IeHbWWsvsIWcCyELSxWVt7.jpg?size=1600x1200&quality=95&type=album"></a>
+                                <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-76/s/v1/ig2/IQPFdCbosMXtarDsJjHNazBYxB84_ofzaQQhK7GPDKcW4zMtTWRdCycHy39ZdA-4f_d8ifV7umcMIZE6bSfAUxGs.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-76/s/v1/ig2/IQPFdCbosMXtarDsJjHNazBYxB84_ofzaQQhK7GPDKcW4zMtTWRdCycHy39ZdA-4f_d8ifV7umcMIZE6bSfAUxGs.jpg?size=1600x1200&quality=95&type=album"></a>
+                                <a data-fslightbox="gallery" href="https://sun9-east.userapi.com/sun9-30/s/v1/ig2/0KACUkTGe3DavQuYmtPLQTnkc1BXLLfaOIDEwJtF1np5v8F5xXHLUGFYP6ShrBXTxyDXXjs4KaT2OnGtRHoxVSiO.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-east.userapi.com/sun9-30/s/v1/ig2/0KACUkTGe3DavQuYmtPLQTnkc1BXLLfaOIDEwJtF1np5v8F5xXHLUGFYP6ShrBXTxyDXXjs4KaT2OnGtRHoxVSiO.jpg?size=1600x1200&quality=95&type=album"></a>
+                                <a data-fslightbox="gallery" href="https://sun9-west.userapi.com/sun9-14/s/v1/ig2/Se7lWFrCMldnJMOZ55SeUpBGEYWIdVwyZzX4ZN8THVpMAuj94nsv8D-XqxKri8po1J5plRiSlNsyCmWF7BKtn4OG.jpg?size=1600x1200&quality=95&type=album"><img src="https://sun9-west.userapi.com/sun9-14/s/v1/ig2/Se7lWFrCMldnJMOZ55SeUpBGEYWIdVwyZzX4ZN8THVpMAuj94nsv8D-XqxKri8po1J5plRiSlNsyCmWF7BKtn4OG.jpg?size=1600x1200&quality=95&type=album"></a>
+                                <a data-fslightbox="gallery" href="https://sun9-west.userapi.com/sun9-12/s/v1/ig2/ZOmOEiVu43_2V4gaWOQReLzedJTqP1IXA3Vxx-ep_zal84r8Yxvde-yIC_-3uszo3zp6lnY6AQHvwstz9atudDNG.jpg?size=1200x1600&quality=95&type=album"><img src="https://sun9-west.userapi.com/sun9-12/s/v1/ig2/ZOmOEiVu43_2V4gaWOQReLzedJTqP1IXA3Vxx-ep_zal84r8Yxvde-yIC_-3uszo3zp6lnY6AQHvwstz9atudDNG.jpg?size=1200x1600&quality=95&type=album"></a>
                             </div>
-                            <button class="button" type="button"><a href="#2" class="link">ДАЛЕЕ</a></button>
-                            <a href="https://vk.com/heart_of_ugra?w=wall-204962426_670" class="vk" target="_blank"><img src="image/vk.png" class="vk_img"></a>
-                        </div>   
-                    </article>
+                            <div class="p">
+                                <p>Провели поиск, было более 30 человек. Всех благодарю. #нефтеюганск #гумкорпус</p>
+                            </div>
+                        </div>
+                        <button class="button" type="button"><a href="#2" class="link">ДАЛЕЕ</a></button>
+                        <a href="https://vk.com/heart_of_ugra?w=wall-204962426_670" class="vk" target="_blank"><img src="image/vk.png" class="vk_img"></a>
+                    </div>   
+                </article>"
+                    ?>
+                    
                     <article class="block">
                         <div id="2" class="info card second">
                             <h1 class="title">ПОИСКИ</h1>
