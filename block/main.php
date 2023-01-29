@@ -1,6 +1,7 @@
 <section class="second section">
     <main>
         <?php
+        print "hello";
         $post = array(
             "title" => "ПОИСКИ",
             "images_url" => array(
