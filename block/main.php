@@ -14,7 +14,7 @@
             "body" => "Провели поиск, было более 30 человек. Всех благодарю. #нефтеюганск #гумкорпус",
             "vk_url" => "https://vk.com/heart_of_ugra?w=wall-204962426_670"
         );
-        print_r('<article class="block">
+        print '<article class="block">
                     <div id="1" class="info card first">
                         <h1 class="title">' + $post['title'] + '</h1>
                         <h2 class="title date">12 ноя 2022 в 12:13</h2>
@@ -30,8 +30,8 @@
                         <button class="button" type="button"><a href="#2" class="link">ДАЛЕЕ</a></button>
                         <a href="' + $post['vk_url'] + '" class="vk" target="_blank"><img src="image/vk.png" class="vk_img"></a>
                     </div>   
-                </article>');
-        print('<article class="block">
+                </article>';
+        print '<article class="block">
                     <div id="1" class="info card first">
                         <h1 class="title">' + $post['title'] + '</h1>
                         <h2 class="title date">12 ноя 2022 в 12:13</h2>
@@ -47,7 +47,7 @@
                         <button class="button" type="button"><a href="#2" class="link">ДАЛЕЕ</a></button>
                         <a href="' + $post['vk_url'] + '" class="vk" target="_blank"><img src="image/vk.png" class="vk_img"></a>
                     </div>   
-                </article>')
+                </article>'
             ?>
 
         <article class="block">
