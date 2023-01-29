@@ -114,6 +114,23 @@
                     );
                     print('<article class="block">
                     <div id="1" class="info card first">
+                        <h1 class="title">' + $post['title'] + '</h1>
+                        <h2 class="title date">12 ноя 2022 в 12:13</h2>
+                        <hr class="line card">
+                        <div class="container-card">
+                            <div class="grid">
+                                <a data-fslightbox="gallery" href=""><img src="' + $post["images_url"][0] + '">' + $post["images_url"][0] + '</a>
+                            </div>
+                            <div class="p">
+                                <p>' + $post['body'] + '</p>
+                            </div>
+                        </div>
+                        <button class="button" type="button"><a href="#2" class="link">ДАЛЕЕ</a></button>
+                        <a href="' + $post['vk_url'] + '" class="vk" target="_blank"><img src="image/vk.png" class="vk_img"></a>
+                    </div>   
+                </article>');
+                print('<article class="block">
+                    <div id="1" class="info card first">
                         <h1 class="title">'+ $post['title'] +'</h1>
                         <h2 class="title date">12 ноя 2022 в 12:13</h2>
                         <hr class="line card">
