@@ -61,7 +61,7 @@ label{
     margin: 0px 50px 0 10px;
     overflow: hidden;
     background: #333333;
-    transition: max-height .40s;
+    transition: max-height .30s;
     font-size: 1.3em;
     color: #fffdfd;
     text-shadow: 0 1px 0 #292727;
@@ -79,7 +79,7 @@ label{
 
 /* :checked */
 .pesontedan input:checked~.pesontedan-content {
-    max-height: 100vh;
+    max-height: 400vh;
 }
 
 .pesontedan input:checked~label{
