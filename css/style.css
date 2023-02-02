@@ -107,16 +107,7 @@ ul{
 
 .help{
     border-radius: 20%;
-    height: 15%;
     margin-top: 23%;
-    background-image: url("/semen/image/help.png");
-}
-
-.help_text{
-    text-align:center;
-    color:#ffffff;
-    font-size: 1em;
-    margin-top: 40px;
 }
 
 .close_button{
