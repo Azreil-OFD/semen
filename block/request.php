@@ -23,7 +23,7 @@ function get()
 
 
     if ($err) {
-        return "cURL Error #:" . $err;
+        return get();
     } else {
         return $response;
     }
