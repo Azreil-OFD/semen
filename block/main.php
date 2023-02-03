@@ -21,7 +21,10 @@ $jsonData = (array)json_decode(get());
 
 foreach ($jsonData as $jsonDatum) {
     $jsonDatum = (array)$jsonDatum;
-
+    if ($jsonDatum[0] == 'Internal Server Error') {
+        continue;
+    }
+    print_r($jsonDatum);
     $urls = (array)$jsonDatum["image_url"];
     $urls_str = "";
     foreach ($urls as $url) {
