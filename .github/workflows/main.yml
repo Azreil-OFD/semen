@@ -15,4 +15,4 @@ jobs:
         script: |
           cd ~/semen/public_html
           git pull
-          git checkout featue-php
+          git checkout main-featue-php
