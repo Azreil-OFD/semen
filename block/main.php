@@ -1,6 +1,5 @@
 <?php
 require 'request.php';
-print "hello";
 
 
 $post = array(
@@ -24,12 +23,19 @@ foreach ($jsonData as $jsonDatum) {
     if ($jsonDatum[0] == 'Internal Server Error') {
         continue;
     }
-    print_r($jsonDatum);
     $urls = (array)$jsonDatum["image_url"];
-    $urls_str = "";
+    $urls_array = array();
     foreach ($urls as $url) {
-        $urls_str = '<a data-fslightbox="gallery" href="' . (string)$url . '"><img src="' . (string)$url . '"></a>';
+        if ($url == "0") {
+            continue;
+        }
+        $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url . '"><img src=" ' . (string)$url . ' "/></a> ';
     }
+    $url_str = "";
+    foreach ($urls_array as $url) {
+        $url_str = $url_str . $url;
+    }
+
 
     printf(/** @lang text */ '
             <article class="block">
@@ -47,14 +53,17 @@ foreach ($jsonData as $jsonDatum) {
                     </div>
                     <button class="button" type="button"><a href="#%d"
                                                             class="link">ДАЛЕЕ</a></button>
-                    <a href="https://vk.com/gumkorpus86?w=wall-216262291_72%%2Fall" class="vk" target="_blank"><img
+                    <a href="%s" class="vk" target="_blank"><img
                                 src="image/vk.png" class="vk_img"></a>
                 </div>
             </article>',
         $jsonDatum["id"],
         $jsonDatum["title"],
         $jsonDatum["create_at"],
-        $urls_str,
+        $url_str,
         $jsonDatum["body"],
-        $jsonDatum["id"] + 1);
+        $jsonDatum["id"] + 1,
+        $jsonDatum["vk_url"]
+    );
+
 }

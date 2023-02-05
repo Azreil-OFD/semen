@@ -5,8 +5,7 @@ function get()
     $curl = curl_init();
 
     curl_setopt_array($curl, [
-        CURLOPT_PORT => "5000",
-        CURLOPT_URL => "http://localhost:5000/api/v1/",
+        CURLOPT_URL => "http://94.198.218.20/api/v1/",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
@@ -22,10 +21,6 @@ function get()
     curl_close($curl);
 
 
-    if ($err) {
-        return get();
-    } else {
-        return $response;
-    }
+    return $response;
 
 }
