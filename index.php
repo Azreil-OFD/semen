@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +10,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="SHORTCUT ICON" href="image/favicon.ico" type="image/x-icon">
 </head>
-
 <body style="overflow-x:hidden;">
 <div class="wrapper">
     <div class="b-popup" id="popup1">
         <div class="b-popup-content">
-            <p>ДЛЯ СВЯЗИ С НАМИ ЗВОНИТЕ ПО НОМЕРУ<br><br> <a href="tel:+79824146777"> +79824146777</a></p>
+            <p>ДЛЯ СВЯЗИ С НАМИ ЗВОНИТЕ ПО НОМЕРУ<br><br> <a href="tel:+79824146777" style="text-decoration: none;">
+                    +7(982) 41-46-777</a></p>
             <a class="close_button" href="javascript:PopUpHide()">Закрыть</a>
         </div>
     </div>
+    <div class="b-popup" id="popup2">
+        <div class="b-popup-content">
+            <p>ДЛЯ ПСИХОЛОГИЧЕСКОЙ ПОДДЕРЖКИ ЗВОНИТЕ ПО НОМЕРУ<br><br> <a href="tel:+79824146777"
+                                                                          style="text-decoration: none;"> +7(982)
+                    41-46-777</a></p>
+            <a class="close_button" href="javascript:PopUpHide2()">Закрыть</a>
+        </div>
+    </div>
+    <a href="javascript:PopUpShow2()">
+        <img src="/image/help.png" alt="help" class="sos_button help">
+    </a>
     <a href="javascript:PopUpShow()"><img
                 src="https://play-lh.googleusercontent.com/ucluQLM-kNsOl9L7-aDbuPQyhEdfLdLenKfhY7m07I2zG2sBJCb8JZQ2q4R1cQX-Lxw"
                 alt="sos" class="sos_button"></a>
@@ -35,7 +45,7 @@
                 <nav class="header_menu">
                     <ul class="header_list">
                         <li>
-                            <a href="/memo.html" target="_blank" class="header_link">ПАМЯТКА</a>
+                            <a href="/memo.php" target="_blank" class="header_link">ПАМЯТКА</a>
                         </li>
                         <li>
                             <a href="#4" class="header_link">НАЙДЕНЫ</a>
@@ -87,11 +97,10 @@
                     <ul class="footer-list">
                         <li class="footer-name">МЫ В СОЦ СЕТЯХ</li>
                         <hr class="line footer">
-                        <li class="footer-item"><a href="https://vk.com/heart_of_ugra" class="link"
-                                                   target="_blank">ВКОНТАКТЕ</a></li>
-                        <li class="footer-item last"><a
-                                    href="https://www.youtube.com/channel/UCQjTSoXJCNLaiKRzbfboE7w" class="link"
-                                    target="_blank">YOUTUBE</a></li>
+                        <li class="footer-item"><a href="https://vk.com/heart_of_ugra" class="link" target="_blank">ВКОНТАКТЕ</a>
+                        </li>
+                        <li class="footer-item last"><a href="https://www.youtube.com/channel/UCQjTSoXJCNLaiKRzbfboE7w"
+                                                        class="link" target="_blank">YOUTUBE</a></li>
                     </ul>
                 </footer>
             </header>
@@ -106,5 +115,4 @@
 <script src="js/fslightbox.js"></script>
 <script src="js/script.js"></script>
 </body>
-
 </html>
