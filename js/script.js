@@ -8,7 +8,7 @@ $(document).ready(function() {
     $( ".header_link" ).click(function() {
         $(".header_burger,.header_menu").toggleClass("active");
         $("body").toggleClass("lock");
-      });
+    });
 });
 
 function PopUpShow(){

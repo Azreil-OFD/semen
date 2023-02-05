@@ -98,23 +98,29 @@ ul{
 
 .sos_button{
     border-radius: 100%;
-    max-width: 6%;
-    margin-left: 92.5%;
-    margin-top: 43%;
+    width: 9%;
+    object-fit: cover;
+    margin-left: 91.5%;
+    margin-top: 27%;
     cursor: pointer;
     position: fixed;
 }
 
 .help{
     border-radius: 20%;
-    margin-top: 23%;
+    margin-left: 92.5%;
+    width: 7%;
+    margin-top: 20%;
 }
 
 .close_button{
-    text-decoration: none;
-    color: #1d1d1d;
-    display: block;
     margin-bottom: 10px;
+}
+
+.buttons_for_close{
+    width: 15%;
+    object-fit: cover;
+    margin-block-end: 0.5em;
 }
 
 /*.dropdown-menu{
@@ -325,10 +331,7 @@ hr.line.footer{
 
 .b-popup-content p{
     margin-block-start: 1em;
-}
-
-.b-popup-content a{
-    margin-block-end: 0.5em;
+    padding-right: 1em;
 }
 
 .vk{
@@ -338,7 +341,6 @@ hr.line.footer{
 
 .vk_img{
     max-width: 50px;
-
 }
 
 .grid {
@@ -355,15 +357,15 @@ hr.line.footer{
     grid-template-columns: 1fr 4fr;
 }
 
+.one_img{
+    margin-left: 100%;
+}
+
 .grid img{
     object-fit: cover;
     height: 100%;
     width: 100%;
     cursor: pointer;
-}
-
-.one_img{
-    margin-left: 100%;
 }
 
 p{
