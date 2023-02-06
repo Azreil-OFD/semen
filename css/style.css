@@ -383,7 +383,7 @@ p{
     background-color: transparent; 
 }
 
-.mobile_buttons{
+.mobile_button{
     display: none;
 }
 
@@ -580,25 +580,24 @@ p{
         width: 95%;
     }
 
-    .mobile_buttons{
-        display: contents;
+    .mobile_button{
+        display: inline-block;
+        width: 28px;
     }
 
-    .mobile_buttons .sos_button{
+    .mobile_button .sos_button{
         display: block;
         z-index: 3;
-        border-radius: 100%;
-        max-width: 85px;
+        width: 85px;
         object-fit: cover;
-        margin-left: -13.5%;
+        margin-left: -8.5%;
         margin-top: -32px;
         cursor: pointer;
         position: fixed;
     }
 
-    .help{
+    .sos_button.help{
         border-radius: 20%;
-        /* margin-left: 92.5%; */
         max-width: 70px;
         margin-top: -26px;
     }
