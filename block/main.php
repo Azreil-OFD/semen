@@ -1,5 +1,19 @@
 <?php
 require 'request.php';
+function link_it($text)
+{
+    $text = preg_replace("/(^|[\n ])([\w]*?)((ht|f)tp(s)?:\/\/[\w]+[^ \,\"\n\r\t<]*)/is", "$1$2<a class=\"text_url\" href=\"$3\">$3</a>", $text); // поиск http://
+    $text = preg_replace("/(^|[\n ])([\w]*?)((www|ftp)\.[^ \,\"\t\n\r<]*)/is", "$1$2<a href=\"http://$3\">$3</a>", $text); // поиск www
+    return ($text);
+}
+
+function link_hesh($text)
+{
+    $text = preg_replace('/(#[АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯяюэьыъщшчцхфутсрпонмлкйизжёедгвба_-]+)/m',
+        "<a class=\"text_hash\" href=\"https://vk.com/feed?q=$1&section=search\">$1</a>", $text); // поиск хештега
+    $text = preg_replace('/q=#/m', "q=%23", $text); // замена хештега на %23 для запроса
+    return ($text);
+}
 
 $jsonData = (array)json_decode(get());
 
@@ -28,6 +42,7 @@ foreach ($jsonData as $jsonDatum) {
     $img_css_tag = "";
     if ($img_counter == 1) {
         $img_css_tag = "one_img";
+        $grid_css_tag = "one_grid";
     } else if ($img_counter == 2) {
         $grid_css_tag = "two";
     }
@@ -69,7 +84,7 @@ foreach ($jsonData as $jsonDatum) {
         $jsonDatum["create_at"],
         $grid_css_tag,
         $url_str,
-        $jsonDatum["body"],
+        link_hesh(link_it($jsonDatum["body"])),
         $jsonDatum["id"] + 1,
         $jsonDatum["vk_url"]
     );

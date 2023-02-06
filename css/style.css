@@ -356,9 +356,11 @@ hr.line.footer{
 .grid.two {
     grid-template-columns: 1fr 4fr;
 }
-
+.one_grid {
+    grid-template-columns: 1fr;
+}
 .one_img{
-    margin-left: 100%;
+    margin-left: 0;
 }
 
 .grid img{
