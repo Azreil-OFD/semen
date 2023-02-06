@@ -211,7 +211,7 @@ li.footer-item.last {
     margin-bottom: 0.7em;
     text-align: center;
     border-radius: 20px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .card.first{
@@ -356,9 +356,11 @@ hr.line.footer{
 .grid.two {
     grid-template-columns: 1fr 4fr;
 }
-
+.one_grid {
+    grid-template-columns: 1fr;
+}
 .one_img{
-    margin-left: 100%;
+    margin-left: 0;
 }
 
 .grid img{
@@ -696,6 +698,7 @@ p{
         font-size: 0.7em;
     }
 }
+
 /*background-color:#A799FD;
   background-color:#ED8AC9;
   background-color:#74F2B4; 
