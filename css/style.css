@@ -383,6 +383,10 @@ p{
     background-color: transparent; 
 }
 
+.mobile_buttons{
+    display: none;
+}
+
 .info{
     float: left;
 }
@@ -574,6 +578,29 @@ p{
 
     .b-popup .b-popup-content{
         width: 95%;
+    }
+
+    .mobile_buttons{
+        display: contents;
+    }
+
+    .mobile_buttons .sos_button{
+        display: block;
+        z-index: 3;
+        border-radius: 100%;
+        max-width: 85px;
+        object-fit: cover;
+        margin-left: -13.5%;
+        margin-top: -32px;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    .help{
+        border-radius: 20%;
+        /* margin-left: 92.5%; */
+        max-width: 70px;
+        margin-top: -26px;
     }
 
     html{
