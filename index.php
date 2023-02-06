@@ -41,10 +41,12 @@
                     <a href="#1" class="header_logo">
                         <img src="image/logo.png" alt="">
                     </a>
-                    <div class="mobile_buttons">
+                    <div class="mobile_button">
                         <a href="javascript:PopUpShow2()">
                             <img src="/image/help.png" alt="help" class="sos_button help">
                         </a>
+                    </div>
+                    <div class="mobile_button">
                         <a href="javascript:PopUpShow()">
                             <img src="image/button.png" alt="sos" class="sos_button">
                         </a>
