@@ -12,7 +12,8 @@
 </head>
 
 <body style="overflow-x:hidden;">
-    <!--<div class="cap_photo"><img src="https://extremum.spb.ru/ex/img/Collag.jpg" alt="">-->
+    <div class="header_background">
+        <div class="background_photo"></div>
     </div>
     <div class="wrapper">
         <div class="b-popup" id="popup1">
