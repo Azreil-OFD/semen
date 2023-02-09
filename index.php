@@ -58,7 +58,7 @@
                     <nav class="header_menu">
                         <ul class="header_list">
                             <li>
-                                <a href="/memo.html" target="_blank" class="header_link">ПАМЯТКА</a>
+                                <a href="/memo.php" target="_blank" class="header_link">ПАМЯТКА</a>
                             </li>
                             <li>
                                 <a href="#4" class="header_link">НАЙДЕНЫ</a>
