@@ -15,6 +15,20 @@ html{
     scroll-padding-top: 15px;
 }
 
+.header_background {
+    height: 457px;  
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.background_photo{
+    margin: 0;
+    width: 100%;    
+    height: 100%;   
+    background-size: cover;
+    background: transparent url(/image/background.png) no-repeat center;
+}
+
 body{
     background: transparent url("noise-pattern.png") repeat;
     position: relative;
@@ -35,6 +49,7 @@ section.first.section {
 section.second.section {
     margin: 0px 10px 0px 10px;
 }
+
 
 ul{
     list-style: none;
@@ -302,7 +317,6 @@ hr.line.footer{
 
 .cap_photo{
     margin: 0 auto;
-    
     width: 100%;
     height: 100%;
     margin-bottom: 2em;
@@ -387,6 +401,10 @@ p{
     margin-bottom: 20px;
     margin-top: 15px;
     background-color: transparent; 
+}
+
+.mobile_button{
+    display: none;
 }
 
 .info{
@@ -580,6 +598,28 @@ p{
 
     .b-popup .b-popup-content{
         width: 95%;
+    }
+
+    .mobile_button{
+        display: inline-block;
+        width: 28px;
+    }
+
+    .mobile_button .sos_button{
+        display: block;
+        z-index: 3;
+        width: 85px;
+        object-fit: cover;
+        margin-left: -8.5%;
+        margin-top: -32px;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    .sos_button.help{
+        border-radius: 20%;
+        max-width: 70px;
+        margin-top: -26px;
     }
 
     html{
