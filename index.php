@@ -11,7 +11,7 @@
     <link rel="SHORTCUT ICON" href="image/favicon.ico" type="image/x-icon">
 </head>
 
-<body style="overflow-x:hidden; margin:0;">
+<body>
     <div class="header_background">
         <div class="background_photo"></div>
     </div>
