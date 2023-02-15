@@ -67,6 +67,9 @@
                                 <a href="#3" class="header_link">ПОИСКИ</a>
                             </li>
                             <li>
+                                <a href="#" class="header_link">ОБУЧЕНИЕ</a>
+                            </li>
+                            <li>
                                 <a href="#3" class="header_link">РОМАН ЗАЛОЗНЫХ</a>
                             </li>
                             <li>
@@ -99,6 +102,10 @@
                             <li class="link-c">
                                 <a href="#3" class="link third">ПОИСКИ</a>
                                 <hr class="line set third">
+                            </li>
+                            <li class="link-c">
+                                <a href="#3" class="link third">ОБУЧЕНИЕ</a>
+                                <hr class="line set second">
                             </li>
                             <li class="link-c">
                                 <a href="#3" class="link fourth">РОМАН ЗАЛОЗНЫХ</a>
