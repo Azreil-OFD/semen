@@ -95,12 +95,29 @@
                                 <a href="/memo.php" class="link first menu_link" target="_blank">ПАМЯТКА</a>
                                 <hr class="line set first">
                             </li>
+                            <div class="pesontedan">
+                                <input id="pesontedan-one" type="checkbox" name="pesontedans">
+                                <li class="link-c main">
+                                    <label for="pesontedan-one" class="link second">ПОИСКИ</label>
+                                </li> 
+                                <div class="pesontedan-content">
+                                    <li class="link-c">
+                                        <a href="#26" class="link third">НАЙДЕНЫ</a>
+                                        <hr class="line set third">
+                                    </li>
+                                    <li class="link-c">
+                                        <a href="#46" class="link third">ОБУЧЕНИЕ</a>
+                                        <hr class="line set second">
+                                    </li>
+                                    <li class="link-c">
+                                        <a href="#52" class="link fourth">РОМАН ЗАЛОЗНЫХ</a>
+                                        <hr class="line set fourth">
+                                    </li>
+                                </div>
+                            </div>
+                            <!--
                             <li class="link-c">
-                                <a href="#26" class="link second">НАЙДЕНЫ</a>
-                                <hr class="line set second">
-                            </li>
-                            <li class="link-c">
-                                <a href="#4" class="link third">ПОИСКИ</a>
+                                <a href="#26" class="link third">НАЙДЕНЫ</a>
                                 <hr class="line set third">
                             </li>
                             <li class="link-c">
@@ -110,7 +127,7 @@
                             <li class="link-c">
                                 <a href="#52" class="link fourth">РОМАН ЗАЛОЗНЫХ</a>
                                 <hr class="line set fourth">
-                            </li>
+                            </li>-->
                         </ul>
                     </nav>
                     <footer>
