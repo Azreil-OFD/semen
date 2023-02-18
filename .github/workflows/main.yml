@@ -14,5 +14,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd ~/semen/public_html
-          git pull --rebase origin master
-          git checkout origin/main --force
+          git pull --rebase origin main
