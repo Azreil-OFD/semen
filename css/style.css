@@ -395,7 +395,7 @@ hr.line.footer{
 }
 
 .six a:last-child {
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 p{
@@ -747,9 +747,16 @@ p{
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 570px){
     p{
         font-size: 0.7em;
+    }
+}
+
+@media (max-width: 420px){
+    p{
+        font-size: 0.6em;
+        padding: 0em .4em 0em .4em;
     }
 }
 
