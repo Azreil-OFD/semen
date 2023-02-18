@@ -390,6 +390,14 @@ hr.line.footer{
     cursor: pointer;
 }
 
+.five a:last-child {
+    grid-column: span 2;
+}
+
+.six a:last-child {
+    grid-column: span 2;
+}
+
 p{
     text-align: center;
     padding-left: 1em;
