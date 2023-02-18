@@ -48,6 +48,9 @@ foreach ($jsonData as $jsonDatum) {
     }
     $urls_array = array();
     foreach ($urls as $url) {
+        if ($url == "video"){
+            continue;
+        }
         if ($url == "0") {
             continue;
         }
