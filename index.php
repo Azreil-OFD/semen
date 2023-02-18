@@ -61,16 +61,16 @@
                                 <a href="/memo.php" target="_blank" class="header_link">ПАМЯТКА</a>
                             </li>
                             <li>
-                                <a href="#4" class="header_link">НАЙДЕНЫ</a>
+                                <a href="#26" class="header_link">НАЙДЕНЫ</a>
                             </li>
                             <li>
-                                <a href="#3" class="header_link">ПОИСКИ</a>
+                                <a href="#4" class="header_link">ПОИСКИ</a>
                             </li>
                             <li>
                                 <a href="#" class="header_link">ОБУЧЕНИЕ</a>
                             </li>
                             <li>
-                                <a href="#3" class="header_link">РОМАН ЗАЛОЗНЫХ</a>
+                                <a href="#52" class="header_link">РОМАН ЗАЛОЗНЫХ</a>
                             </li>
                             <li>
                                 <a class="header_link" target="_blank" href="https://vk.com/heart_of_ugra">ВКОНТАКТЕ</a>
