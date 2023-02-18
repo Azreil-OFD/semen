@@ -14,4 +14,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd ~/semen/public_html
-          git checkout origin/main
+          git checkout origin/main --force
