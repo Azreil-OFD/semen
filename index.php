@@ -145,7 +145,7 @@
             </section>
             <section class="second section">
                 <main>
-                    <? require 'block/main.php' ?>
+                    <?php require 'block/main.php' ?>
                 </main>
             </section>
         </section>
