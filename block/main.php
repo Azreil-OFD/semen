@@ -45,6 +45,10 @@ foreach ($jsonData as $jsonDatum) {
         $grid_css_tag = "one_grid";
     } else if ($img_counter == 2) {
         $grid_css_tag = "two";
+    } else if ($img_counter == 5 or $img_counter == 8 or $img_counter == 11 or $img_counter == 14 or $img_counter == 17 or $img_counter == 20) {
+        $grid_css_tag = "five";
+    } else if ($img_counter == 4 or $img_counter == 7 or $img_counter == 10 or $img_counter == 13 or $img_counter == 16 or $img_counter == 19) {
+        $grid_css_tag = "six";
     }
     $urls_array = array();
     foreach ($urls as $url) {
