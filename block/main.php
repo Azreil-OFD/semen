@@ -1,4 +1,32 @@
 <?php
+function url_text($text)
+{
+    // Создаём дескриптор cURL
+    $ch = curl_init($text);
+
+    // Запускаем
+    curl_exec($ch);
+
+    // Проверяем наличие ошибок
+    if (!curl_errno($ch)) {
+        switch ($http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE)) {
+          case 502:
+            return False;
+            curl_close($ch);
+            break;
+          default:
+            return True;
+        }
+      }
+
+  
+}
+    
+?>
+
+
+
+<?php
 require 'request.php';
 function link_it($text)
 {
@@ -26,9 +54,6 @@ $color = array(
 $color_counter = 0;
 foreach ($jsonData as $jsonDatum) {
     $jsonDatum = (array)$jsonDatum;
-    if ($jsonDatum[0] == 'Internal Server Error') {
-        continue;
-    }
     $urls = (array)$jsonDatum["image_url"];
 
 
@@ -58,13 +83,22 @@ foreach ($jsonData as $jsonDatum) {
         if ($url == "0") {
             continue;
         }
-        $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url . '"><img class="' . $img_css_tag . '" src=" ' . (string)$url . ' "/></a> ';
+        if (url_text($url)) {
+            $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url . '"><img class="' . $img_css_tag . '" src=" ' . (string)$url . ' "/></a> ';
+        }
     }
     $url_str = "";
     foreach ($urls_array as $url) {
         $url_str = $url_str . $url;
     }
 
+    if ($jsonDatum["title"] != "Обучение") {
+        $vk_url = '<a href="'. $jsonDatum["vk_url"] .'" class="vk" target="_blank"><img
+    src="image/vk.png" class="vk_img"></a>';
+    } else {
+        $vk_url = ' ';
+    }
+    
     printf(/** @lang text */ '
             <article class="block">
                 <div id="%d" class="info card %s">
@@ -81,8 +115,7 @@ foreach ($jsonData as $jsonDatum) {
                     </div>
                     <button class="button" type="button"><a href="#%d"
                                                             class="link">ДАЛЕЕ</a></button>
-                    <a href="%s" class="vk" target="_blank"><img
-                                src="image/vk.png" class="vk_img"></a>
+                    %s
                 </div>
             </article>',
         $jsonDatum["id"],
@@ -93,7 +126,7 @@ foreach ($jsonData as $jsonDatum) {
         $url_str,
         link_hesh(link_it($jsonDatum["body"])),
         $jsonDatum["id"] + 1,
-        $jsonDatum["vk_url"]
+        $vk_url
     );
     $color_counter++;
     if ($color_counter == 4) {
