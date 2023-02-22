@@ -567,6 +567,8 @@ label{
     overflow: hidden;
     transition: max-height .30s;
     color: #1d1d1d;
+    background-color: #fff;
+    border-radius: 40px;
 }
 
 .pesontedan-content p {
