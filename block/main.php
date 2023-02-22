@@ -83,16 +83,15 @@ foreach ($jsonData as $jsonDatum) {
         if ($url == "0") {
             continue;
         }
-        if (url_text($url)) {
-            $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url . '"><img class="' . $img_css_tag . '" src=" ' . (string)$url . ' "/></a> ';
-        }
+    $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url . '"><img class="' . $img_css_tag . '" src=" ' . (string)$url . ' "/></a> ';
+        
     }
     $url_str = "";
     foreach ($urls_array as $url) {
         $url_str = $url_str . $url;
     }
 
-    if ($jsonDatum["title"] != "Обучение") {
+    if (($jsonDatum["title"] != "Обучение") == ($jsonDatum["title"] !="ОБУЧЕНИЕ") ) {
         $vk_url = '<a href="'. $jsonDatum["vk_url"] .'" class="vk" target="_blank"><img
     src="image/vk.png" class="vk_img"></a>';
     } else {
