@@ -389,6 +389,13 @@ hr.line.footer{
     cursor: pointer;
 }
 
+.grid video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
 .five a:last-child {
     grid-column: span 2;
 }

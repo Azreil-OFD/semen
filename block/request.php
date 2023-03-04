@@ -4,7 +4,7 @@ function get()
 {
     $curl = curl_init();
     curl_setopt_array($curl, [
-        CURLOPT_URL => "http://94.198.218.20/api/v1/",
+        CURLOPT_URL => "http://188.18.55.62:8000/posts/format",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,

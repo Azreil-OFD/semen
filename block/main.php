@@ -44,6 +44,7 @@ function link_hesh($text)
 }
 
 $jsonData = (array)json_decode(get());
+$jsonData = $jsonData["posts"];
 
 $color = array(
     'first',
@@ -54,8 +55,12 @@ $color = array(
 $color_counter = 0;
 foreach ($jsonData as $jsonDatum) {
     $jsonDatum = (array)$jsonDatum;
-    $urls = (array)$jsonDatum["image_url"];
-
+    $urls = (array)$jsonDatum["media"];
+    $media = (array)$jsonDatum["media"];
+    $media_counter = 0;
+    foreach ($media as $med) {
+        $media_counter++;
+    }
 
     $img_counter = 0;
     foreach ($urls as $url) {
@@ -75,15 +80,20 @@ foreach ($jsonData as $jsonDatum) {
     } else if ($img_counter == 4 or $img_counter == 7 or $img_counter == 10 or $img_counter == 13 or $img_counter == 16 or $img_counter == 19) {
         $grid_css_tag = "six";
     }
+
     $urls_array = array();
     foreach ($urls as $url) {
-        if ($url == "video"){
-            continue;
+        if ($url->alt == "photo"){
+            $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url->url . '"><img class="' . $img_css_tag . '" src=" ' . (string)$url->url   . ' "/></a> ';
+        }
+        if ($url->alt == "video"){
+            $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url->url . '"><video class="' . $img_css_tag . '" src=" ' . (string)$url->url   . ' "/></a> ';
         }
         if ($url == "0") {
             continue;
         }
-    $urls_array[] = ' <a data-fslightbox="gallery" href=" ' . (string)$url . '"><img class="' . $img_css_tag . '" src=" ' . (string)$url . ' "/></a> ';
+
+       
         
     }
     $url_str = "";
@@ -100,7 +110,7 @@ foreach ($jsonData as $jsonDatum) {
     
     printf(/** @lang text */ '
             <article class="block">
-                <div id="%d" class="info card %s">
+                <div id="%s" class="info card %s">
                     <h1 class="title">%s</h1>
                     <h2 class="title date">%s</h2>
                     <hr class="line card">
@@ -112,7 +122,7 @@ foreach ($jsonData as $jsonDatum) {
                             <p>%s</p>
                         </div>
                     </div>
-                    <button class="button" type="button"><a href="#%d"
+                    <button class="button" type="button"><a href="#%s"
                                                             class="link">ДАЛЕЕ</a></button>
                     %s
                 </div>
@@ -124,7 +134,7 @@ foreach ($jsonData as $jsonDatum) {
         $grid_css_tag,
         $url_str,
         link_hesh(link_it($jsonDatum["body"])),
-        $jsonDatum["id"] + 1,
+        $jsonDatum["next_id"],
         $vk_url
     );
     $color_counter++;
