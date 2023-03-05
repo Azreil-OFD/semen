@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <title>Поиск Нефтеюганск</title>
-    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="SHORTCUT ICON" href="image/favicon.ico" type="image/x-icon">
 </head>
@@ -116,19 +116,6 @@
                                     </li>
                                 </div>
                             </div>
-                            <!--
-                            <li class="link-c">
-                                <a href="#26" class="link third">НАЙДЕНЫ</a>
-                                <hr class="line set third">
-                            </li>
-                            <li class="link-c">
-                                <a href="#46" class="link third">ОБУЧЕНИЕ</a>
-                                <hr class="line set second">
-                            </li>
-                            <li class="link-c">
-                                <a href="#52" class="link fourth">РОМАН ЗАЛОЗНЫХ</a>
-                                <hr class="line set fourth">
-                            </li>-->
                         </ul>
                     </nav>
                     <footer>
