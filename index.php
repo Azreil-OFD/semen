@@ -62,16 +62,16 @@
                                 <a href="/memo.php" target="_blank" class="header_link">ПАМЯТКА</a>
                             </li>
                             <li>
-                                <a href="#26" class="header_link">НАЙДЕНЫ</a>
+                                <a href="#640227ae20884d81e1b27402" class="header_link">НАЙДЕНЫ</a>
                             </li>
                             <li>
-                                <a href="#4" class="header_link">ПОИСКИ</a>
+                                <a href="#640227ae20884d81e1b273ff" class="header_link">ПОИСКИ</a>
                             </li>
                             <li>
-                                <a href="#46" class="header_link">ОБУЧЕНИЕ</a>
+                                <a href="#640227ae20884d81e1b2742f" class="header_link">ОБУЧЕНИЕ</a>
                             </li>
                             <li>
-                                <a href="#52" class="header_link">РОМАН ЗАЛОЗНЫХ</a>
+                                <a href="#640227ae20884d81e1b27401" class="header_link">РОМАН ЗАЛОЗНЫХ</a>
                             </li>
                             <li>
                                 <a class="header_link" target="_blank" href="https://vk.com/heart_of_ugra">ВКОНТАКТЕ</a>
@@ -103,15 +103,15 @@
                                 </li> 
                                 <div class="pesontedan-content">
                                     <li class="link-c">
-                                        <a href="#26" class="link third">НАЙДЕНЫ</a>
+                                        <a href="#640227ae20884d81e1b27402" class="link third">НАЙДЕНЫ</a>
                                         <hr class="line set third">
                                     </li>
                                     <li class="link-c">
-                                        <a href="#46" class="link third">ОБУЧЕНИЕ</a>
+                                        <a href="#640227ae20884d81e1b2742f" class="link third">ОБУЧЕНИЕ</a>
                                         <hr class="line set second">
                                     </li>
                                     <li class="link-c">
-                                        <a href="#52" class="link fourth">РОМАН ЗАЛОЗНЫХ</a>
+                                        <a href="#640227ae20884d81e1b27401" class="link fourth">РОМАН ЗАЛОЗНЫХ</a>
                                         <hr class="line set fourth">
                                     </li>
                                 </div>
